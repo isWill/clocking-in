@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>考勤报备表</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="first-page">
+    <div><span class="title">部门</span>：
+        <select id="department">
+            <option id="leshiyingye">乐视影业</option>
+            <option id="leshizizhi">乐视自制</option>
+            <option id="leshiyingshihuiyuan">乐视影视会员</option>
+        </select>
+    </div>
+    <div><span class="title">姓名</span>：
+        <input type="text" id="username" class="save-data">
+    </div>
+    <div id="period">
+        <span class="title">考勤周期</span>：
+        <input class="cycle-start" type="text">月21日-<input class="cycle-end" type="text">月20日
+    </div>
+    <div id="date-of-filing"><span class="title">申请日期</span>：
+        <input class="time-full-year" type="text">年<input class="time-month" type="text">月<input class="time-date" type="text">日
+    </div>
+    <div><span class="title">申请事由</span>：
+        <textarea id="applyForReason"></textarea>
+    </div>
+    <div class="first-page-holiday-time">
+        <input class="start-full-year" type="text">年
+        <input class="start-month" type="text">月
+        <input class="start-date" type="text">日
+        <input class="start-hours" type="text">时 至
+        <input class="end-full-year" type="text">年
+        <input class="end-month" type="text">月
+        <input class="end-date" type="text">日
+        <input class="end-hours" type="text">时，共
+        <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+        <u>备注：</u>
+        <select class="reason-for-leave">
+            <option>存休</option>
+            <option>倒休</option>
+            <option>事假</option>
+            <option>带薪病假</option>
+            <option>病假</option>
+            <option>年假</option>
+            <option>婚假</option>
+            <option>产假</option>
+            <option>公出</option>
+            <option>出差</option>
+            <option>其他</option>
+        </select>
+        <input class="qita" type="text">
+        <b class="add-btn"></b>
+    </div>
+    <div class="footer-info">
+        <div>
+            <span class="title">申请人</span>：
+            <input class="proposer save-data" type="text">
+        </div>
+        <div>
+            <span class="title">直属上级</span>：
+            <input class="superior save-data" type="text">
+        </div>
+        <div>
+            <span class="title">部门负责人</span>：
+            <input class="departmentHead save-data" type="text">
+        </div>
+        <div>
+            <span class="title">分管副总</span>：
+            <input class="VP save-data" type="text">
+        </div>
+        <div>
+            <span class="title">人力资源部总监</span>：
+            <input class="HR save-data" type="text">
+        </div>
+        <div>
+            <span class="title" style="text-align: center">CEO</span>：
+            <input class="CEO save-data" type="text">
+        </div>
+    </div>
+</div>
+<div class="container first-child">
+    <div class="table-head"><img src="" align="top" alt><i>考勤报备单</i></div>
+    <div class="table-body firstTable">
+        <table>
+            <tbody>
+            <tr>
+                <td class="table-td" colspan="4">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="department">部门：<input type="text" readonly></td>
+                            <td class="username">姓名：<input type="text"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="table-td" colspan="6">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="period">考勤周期：<input class="cycle-start" type="text">月21日-<input class="cycle-end" type="text">月20日</td>
+                            <td class="date-of-filing">申请日期：<input class="time-full-year" type="text">年<input class="time-month" type="text">月<input class="time-date" type="text">日</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="reason" colspan="10">
+                    <input type="checkbox" class="cunxiu" ><label></label>存休
+                    <input type="checkbox" class="daoxiu" ><label></label>倒休
+                    <input type="checkbox" class="shijia" ><label></label>事假
+                    <input type="checkbox" class="daixinbingjia" ><label></label>带薪病假
+                    <input type="checkbox" class="bingjia"><label></label>病假
+                    <input type="checkbox" class="nianjia"><label></label>年假
+                    <input type="checkbox" class="hunjia"><label></label>婚假
+                    <input type="checkbox" class="chanjia"><label></label>产假
+                    <input type="checkbox" class="gongchu"><label></label>公出
+                    <input type="checkbox" class="chuchai"><label></label>出差
+                    <input type="checkbox" class="qita"><label></label>其他
+                    <input class="another-reason" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="reason-title" colspan="1">申请<br>事由</td>
+                <td class="reason-text" colspan="9">
+                    <textarea name="apply-for-reason" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time-title" colspan="1" rowspan="3">时间<span>(请在小时/天处勾选单位)</span></td>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time-explain" colspan="10">注：☆ 存休、倒休1小时起算，半小时为单位累计；工作日存休从下班时间推后1小时开始计算；☆
+                    倒休、事假、公出以小时计，1天8小时，半天4小时；☆ 病假、带薪病假以天计，半天起算。不足4小时不足8小时的计1天；☆ 年假不包含法定节假日，婚假、丧假包含法定节假日；☆
+                    请在小时或天处打钩，明确您的考勤单位
+                </td>
+            </tr>
+            <tr>
+                <td class="bosses-title" colspan="10">以下审批由对应责任人签字</td>
+            </tr>
+            <tr>
+                <td colspan="1">申请人</td>
+                <td colspan="2" ><input class="proposer" type="text"></td>
+                <td colspan="1">直属上级</td>
+                <td colspan="2"><input class="superior" type="text"></td>
+                <td colspan="1">部门<br>负责人</td>
+                <td colspan="3"><input class="departmentHead" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="1">分管副总</td>
+                <td colspan="2"><input class="VP" type="text"></td>
+                <td colspan="1">人力资源部总监</td>
+                <td colspan="2"><input class="CHO" type="text"></td>
+                <td colspan="1">CEO</td>
+                <td colspan="3"><input class="CEO" type="text"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-foot">
+        备注：☆ 本表格涂改无效。☆ 每张单子仅限同类假期使用。☆ 所有请假必须提前申请，不允许先休后补，否则视为无效；☆ 3天以下的假期部门负责人核准，3天（含）以上的假期还需分管副总及公司CEO核准；☆ 倒休不可预支，倒休最小单位为1小时；☆ 加班、出差详见《加班申请确认单》及《出差申请单》；☆ 公出需到前台登记《公出备忘录》；☆ 存休小时以前台签字确认时间为准
+    </div>
+
+    <div class="table-head"><img src="" align="top" alt><i>考勤报备单</i></div>
+    <div class="table-body secondTable">
+        <table>
+            <tbody>
+            <tr>
+                <td class="table-td" colspan="4">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="department">部门：<input type="text"></td>
+                            <td class="username">姓名：<input type="text"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="table-td" colspan="6">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="period">考勤周期：<input class="cycle-start" type="text">月21日-<input class="cycle-end" type="text">月20日</td>
+                            <td class="date-of-filing">申请日期：<input class="time-full-year" type="text">年<input class="time-month" type="text">月<input class="time-date" type="text">日</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="reason" colspan="10">
+                    <input type="checkbox" class="cunxiu"><label></label>存休
+                    <input type="checkbox" class="daoxiu"><label></label>倒休
+                    <input type="checkbox" class="shijia"><label></label>事假
+                    <input type="checkbox" class="daixinbingjia"><label></label>带薪病假
+                    <input type="checkbox" class="bingjia"><label></label>病假
+                    <input type="checkbox" class="nianjia"><label></label>年假
+                    <input type="checkbox" class="hunjia"><label></label>婚假
+                    <input type="checkbox" class="chanjia"><label></label>产假
+                    <input type="checkbox" class="gongchu"><label></label>公出
+                    <input type="checkbox" class="chuchai"><label></label>出差
+                    <input type="checkbox" class="qita"><label></label>其他
+                    <input class="another-reason" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="reason-title" colspan="1">申请<br>事由</td>
+                <td class="reason-text" colspan="9">
+                    <textarea name="apply-for-reason" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time-title" colspan="1" rowspan="3">时间<span>(请在小时/天处勾选单位)</span></td>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time" colspan="9">
+                    <input class="start-full-year" type="text">年
+                    <input class="start-month" type="text">月
+                    <input class="start-date" type="text">日
+                    <input class="start-hours" type="text">时 至
+                    <input class="end-full-year" type="text">年
+                    <input class="end-month" type="text">月
+                    <input class="end-date" type="text">日
+                    <input class="end-hours" type="text">时，共
+                    <input class="used-time" type="text"><span>小时</span><i>(天)</i>
+                    <input class="more-info" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="holiday-time-explain" colspan="10">注：☆ 存休、倒休1小时起算，半小时为单位累计；工作日存休从下班时间推后1小时开始计算；☆
+                    倒休、事假、公出以小时计，1天8小时，半天4小时；☆ 病假、带薪病假以天计，半天起算。不足4小时不足8小时的计1天；☆ 年假不包含法定节假日，婚假、丧假包含法定节假日；☆
+                    请在小时或天处打钩，明确您的考勤单位
+                </td>
+            </tr>
+            <tr>
+                <td class="bosses-title" colspan="10">以下审批由对应责任人签字</td>
+            </tr>
+            <tr>
+                <td colspan="1">申请人</td>
+                <td colspan="2"><input class="proposer" type="text"></td>
+                <td colspan="1">直属上级</td>
+                <td colspan="2"><input class="superior" type="text"></td>
+                <td colspan="1">部门<br>负责人</td>
+                <td colspan="3"><input class="departmentHead" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="1">分管副总</td>
+                <td colspan="2"><input class="VP" type="text"></td>
+                <td colspan="1">人力资源部总监</td>
+                <td colspan="2"><input class="CHO" type="text"></td>
+                <td colspan="1">CEO</td>
+                <td colspan="3"><input class="CEO" type="text"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table-foot">
+        备注：☆ 本表格涂改无效。☆ 每张单子仅限同类假期使用。☆ 所有请假必须提前申请，不允许先休后补，否则视为无效；☆ 3天以下的假期部门负责人核准，3天（含）以上的假期还需分管副总及公司CEO核准；☆ 倒休不可预支，倒休最小单位为1小时；☆ 加班、出差详见《加班申请确认单》及《出差申请单》；☆ 公出需到前台登记《公出备忘录》；☆ 存休小时以前台签字确认时间为准
+    </div>
+
+</div>
+<div class="btns">
+    <button id="reset" type="button">重置信息</button>
+    <button id="generate" type="button">生成表格</button>
+    <a id="copyPage" type="button">保存信息</a>
+    <button id="print" type="button">打印预览</button>
+    <button id="alertMessage" type="button">温馨提示</button>
+</div>
+</body>
+<script src="http://js.letvcdn.com/lc03_pay/201512/17/17/12/jquery-1.10.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/storage.js"></script>
+</html>

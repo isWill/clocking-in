@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+body {
+    font-size: 14px;
+    font-family: 'SimSun',serif;
+    color: #000;
+}
+
+.container input {
+    padding: 0;
+    font-size: 14px;
+    font-family: 'SimSun',serif;
+    color: #000;
+    border: 0;
+}
+
+.container textarea {
+    width: 700px;
+    height: 80px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: serif;
+    resize: none;
+    border: 0;
+    outline: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a:link , a:visited {
+    text-decoration: none;  /*超链接无下划线*/
+}
+
+div.container {
+    display: none;
+    position: relative;
+    margin: 50px auto;
+    padding-top: 80px;
+    width: 800px;
+}
+
+div.first-child {
+    padding-top: 0;
+}
+
+.btns {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
+
+.btns button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #fff;
+    background-color: #333;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btns a {
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btns button:hover ,.btns a:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+div.table-head {
+    margin-bottom: 10px;
+    height: 31px;
+}
+
+img {
+    width: 300px;
+}
+
+div.table-head i {
+    display: inline-block;
+    margin-left: 8px;
+    padding-top: 8px;
+    height: 100%;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.table-body {
+    padding: 3px;
+    border: 1px solid #000;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    width: 100%;
+}
+
+table tr:nth-child(3) {
+    height: 120px;
+}
+
+table tr:nth-child(4) td , table tr:nth-child(5) td , table tr:nth-child(6) td {
+    height: 36px;
+}
+
+table tr:nth-child(9) input , table tr:nth-child(10) input {
+    text-align: center;
+    font-size: 16px;
+}
+
+table tr:nth-child(9) td , table tr:nth-child(10) td {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    font-size: 13px;
+}
+
+td{
+    width: 54px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.department input , .username input {
+    width: 100px;
+}
+
+.period input {
+    width: 16px;
+    text-align: right;
+}
+
+.date-of-filing input {
+    width: 13%;
+    text-align: right;
+}
+
+.reason input[type="checkbox"] {
+    display: none;
+    margin: 3px 3px 0 4px;
+}
+
+.another-reason {
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.holiday-time-explain , .reason {
+    text-align: left;
+}
+
+.holiday-time-title span{
+    font-size: 12px;
+}
+
+.holiday-time-explain {
+    padding: 10px 3px 10px 3px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.bosses-title {
+    height: 20px;
+}
+
+.holiday-time {
+    position: relative;
+    text-align: left;
+}
+
+.holiday-time input {
+    width: 30px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.table-foot {
+    margin-bottom: 50px;
+    padding: 20px 10px 10px 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.table-foot:last-child {
+    margin-bottom: 0;
+}
+
+.holiday-time span {
+    margin-right: 5px;
+}
+
+.holiday-time input.start-full-year , .holiday-time input.end-full-year {
+    width: 36px;
+}
+
+.date-of-filing input.time-month , .date-of-filing input.time-date {
+    width: 10%;
+}
+
+.period div {
+    width: 100%;
+    height: 100%;
+}
+
+td table {
+    padding: 0;
+    border: 0;
+}
+
+td tr {
+    padding: 0;
+    border: 0;
+}
+
+td td {
+    padding: 0;
+    border: 0;
+}
+
+td td:nth-child(1) {
+    border-right: 1px solid #000;
+}
+
+td.table-td {
+    padding: 0 !important;
+}
+
+
+
+input[type="checkbox"] + label {
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    margin-right: 4px;
+}
+input[type="checkbox"] + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked + label {
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #243441;
+}
+
+input[type="checkbox"]:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 1px 0 0 0;
+    vertical-align: text-top;
+}
+
+.holiday-time input.more-info {
+    width: 100px;
+    margin-right: 0;
+    text-align: left;
+}
+
+ul {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 3px;
+    padding: 0 0 0 3px;
+    width: 95px;
+    border: 1px solid #000;
+    border-top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+li {
+    height: 18px;
+    line-height: 18px;
+    list-style: none;
+    cursor: pointer;
+}
+
+@media print {
+    .btns {
+        display: none;
+    }
+}
+
+.first-page {
+    margin: auto;
+    width: 1030px;
+    font-size: 18px;
+    color: #333;
+}
+
+.first-page input {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    font-size: 18px;
+    font-family: 'SimSun',serif;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 3px;
+    outline: none;
+}
+
+.first-page select {
+    font-size: 18px;
+    color: #333;
+}
+
+.first-page input:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+.first-page div {
+    margin-bottom: 20px;
+}
+
+#period input , #date-of-filing input {
+    padding: 0 10px;
+    width: 50px;
+    text-align: right;
+}
+
+.first-page-holiday-time {
+    font-size: 16px;
+}
+
+.first-page-holiday-time input {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40px;
+    font-size: 16px;
+    text-align: right;
+}
+
+.first-page-holiday-time .qita {
+    visibility: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+}
+
+.reason-for-leave {
+    font-size: 14px !important;
+}
+
+.first-page textarea {
+    padding: 10px;
+    width: 96%;
+    height: 200px;
+    font-size: 18px;
+}
+
+b.add-btn {
+    position: relative;
+    top: 3px;
+    left: -5px;
+    width: 16px;
+    height: 16px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 4px;
+}
+
+b.add-btn:after {
+    content: '\208a';
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    padding: 1px 0 0 0;
+    vertical-align: text-top;
+}
+
+b.add-btn:hover {
+    cursor: pointer;
+}
+
+b.delete-btn {
+  position: relative;
+  top: 3px;
+  left: -5px;
+  width: 16px;
+  height: 16px;
+  background-color: #FFF;
+  border: 1px solid #000;
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 4px;
+}
+
+b.delete-btn:after {
+  content: '\208b';
+  position: absolute;
+  top: -30px;
+  left: -1px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  padding: 1px 0 0 0;
+  vertical-align: text-top;
+}
+
+b.delete-btn:hover {
+  cursor: pointer;
+}
+
+.title {
+    display: inline-block;
+    width: 91px;
+    text-align: justify;
+}
+
+.title:after {
+    content: " ";
+    letter-spacing: 200px;
+}
+
+u {
+    text-decoration: none;
+}
+
+.first-page-holiday-time span , .first-page-holiday-time i {
+    cursor: pointer;
+}
+
+#alertMessage , #print {
+  display: none;
+}
+
+#alertMessage {
+  margin-bottom: 0;
+}
